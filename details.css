@@ -1,0 +1,51 @@
+body {
+  margin: auto;
+}
+
+.imgDiv > img {
+  height: 450px;
+  width: 100%;
+}
+
+.contentDiv {
+  height: 500px;
+}
+.available {
+  color: rgb(80 97 8);
+}
+.feature {
+  float: left;
+  margin-left: 5%;
+}
+
+.feature_content {
+  width: 100%;
+  display: inline-block;
+}
+
+.fetIcon {
+  height: 50px;
+  width: 50px;
+}
+
+.removeMargin {
+  margin-left: -1%;
+}
+
+.checkBtn {
+  height: 40px;
+  width: 200px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: grey;
+  color: #fff;
+  border: 0;
+  box-shadow: 1px 1px 1px black;
+}
+.btn-add {
+  background-color: rgb(80 97 8);
+  color: #fff;
+}
+.detail-heading {
+  color: #506108;
+}

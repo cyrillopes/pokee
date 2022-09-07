@@ -1,0 +1,237 @@
+body {
+  margin: auto;
+}
+
+/* Header Section */
+header {
+  height: 120px;
+  width: 100%;
+  position: sticky;
+  border-bottom: black;
+  box-shadow: 0px 0px 10px rgb(82, 81, 81);
+}
+.nav-link {
+  color: black;
+  margin-left: 0;
+}
+.navbar-heading > img {
+  height: 100px;
+  width: 100px;
+}
+.logo-container {
+  margin: 0% 3% auto 10%;
+}
+.search-restaurant {
+  width: 45%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slogo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Search input box*/
+.search-restaurant input {
+  margin-top: 2%;
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: 1px rgb(77, 77, 77) solid;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+}
+.navbar-collapse {
+  margin-top: -9%;
+}
+.search-restaurant .auto-complete {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  padding: 10px 8px;
+  overflow-y: auto;
+  max-height: 280px;
+  opacity: 0;
+}
+.auto-complete li {
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+.auto-complete li:hover {
+  background-color: #efefef;
+}
+.search-restaurant .search-icon {
+  position: absolute;
+  top: 12%;
+  right: 2%;
+  text-align: center;
+  color: #6b792e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Listing page */
+.headingTitle {
+  text-align: left;
+  margin-left: 5%;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(80 97 8);
+  margin-top: 3%;
+}
+
+.filter-heading > h2 {
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(80 97 8);
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.cuisine > p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(107, 121, 46);
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#content {
+  width: 80%;
+  display: inline-block;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+.search-span {
+  background-color: rgb(107, 121, 46);
+  color: #fff;
+}
+
+.location-search {
+  border-color: rgb(107, 121, 46);
+  color: rgb(107, 121, 46);
+  width: 70%;
+}
+.cuisine {
+  margin-top: 5%;
+}
+.filterDiv {
+  display: inline-block;
+  width: 23%;
+  float: left;
+  border-radius: 2%;
+  box-shadow: 1px 3px 3px 2px rgb(211, 204, 204);
+}
+li,
+label {
+  color: rgb(107, 121, 46);
+}
+
+.form-check {
+  margin-left: 5%;
+}
+.form-check-input {
+  border-radius: 1%;
+}
+.form-check-input:checked {
+  background-color: rgb(80 97 8);
+}
+
+.sort-radio {
+  margin-bottom: 10%;
+}
+
+.contentDiv {
+  height: 800px;
+  width: 73%;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+.food-item {
+  width: 100%;
+  height: 330px;
+  display: inline-block;
+  border-radius: 2%;
+  box-shadow: 1px 3px 3px 2px rgb(211, 204, 204);
+  margin-bottom: 5%;
+  padding-left: 2%;
+}
+.food-item-img {
+  width: 25%;
+  height: 200px;
+  float: left;
+}
+.food-item-img > img {
+  border-radius: 20%;
+  height: 150px;
+  width: 150px;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.food-item-content {
+  width: 75%;
+  height: 200px;
+  margin-left: 25%;
+}
+.food-content-para {
+  color: rgb(80 97 8);
+  margin-left: 5%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.location-para {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(107, 121, 46);
+  margin-left: 5%;
+}
+
+.subContent-heading > h2 {
+  margin-top: 3%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(80 97 8);
+  font-weight: bold;
+  margin-left: 5%;
+}
+.line {
+  margin-top: 7%;
+  text-align: center;
+  width: 70%;
+}
+
+.subCousine {
+  width: 100%;
+  height: 100px;
+  margin-top: 2%;
+  display: inline-block;
+}
+.cuisine-content {
+  width: 20%;
+  height: 100px;
+  margin-left: 3%;
+  float: left;
+}
+.cuisine-cost {
+  width: 20%;
+  height: 100px;
+  margin-left: 29%;
+}
+
+.cuisine-content > p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(107, 121, 46);
+}
+.cuisine-cost > p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(80 97 8);
+}
