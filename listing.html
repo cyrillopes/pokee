@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <script defer src="js/script.js"></script>
+    <!-- <script defer src="js/script.js"></script> -->
     <script defer src="js/search.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="listing.css">
@@ -33,239 +33,250 @@
                         <a class="navbar-brand navbar-heading" href="#index.html"><img src="img/poke-logo.png"
                                 alt=""></a>
                     </div>
-
                     <div class="input-group input-group-lg search-restaurant">
-                        <input type="text">
-                        <div class="auto-complete">
-                            <li>Sugar</li>
-                            <li>Sugar</li>
-                            <li>Sugar</li>
-                        </div>
-                        <div class="search-icon"><img
-                                src="https://img.icons8.com/ios-glyphs/30/6b792e/search--v1.png" /></div>
+                        <span class="input-group-text search-span" id="inputGroup-sizing-lg">Search</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
                     </div>
-
-                    <div class="collapse navbar-collapse login-search">
-                        <ul class="navbar-nav ms-lg-5 navbar-nav-scroll">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav ms-lg-5 navbar-nav-scroll ">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Log in</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link">Sign up</a>
                             </li>
-                            <li class="nav-item ms-lg-5">
+                            <li class="nav-item ">
                                 <img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABiUlEQVRIie3VzysEcRjH8fcza3e2/AEOlJK/wUlu2oPS5D9YtCd/gIP/wsXKj21zUCMUUraUdpOcnFwligvKYhbNPA4IGXbWzOwBn9PM0zO9er7Ptwb+WgTAyqbLQO9L7VhUxlcKzmKcsOFT61TRhcERsztO+FOs4XTRyqbVyqYn4nQ+TeyhSwAKA02Fzep9CXAEegZHW9uaBts2jgo7gCGem4kLFr+ilTXHQCZj8Mqr87U+8L/VuAnZiAFFoOv12Rdem6kdAYdRw6qUvoWfmzTyqRWpDxsS+XFrCmO7LtxyU6sAlxG6B3bh9rwubNu48LaTsBGRrffvX8IAKJEdt7ofh/gWTiZSG4Abgesk72q7gWF79voS2A+rqrBj2ziBYQBV1sPC6Mf9BoITKWMeqP4YFa4Mt6XYMLw8fXcmIhmFPeCxAfIBqOAa/SvF6kUD3/3S+P4W/TI0Yg6oJ3kFRTS3One/Gaav7o5f43kypdAOdKCSD9sXGI46wWHRHHAKnIhqLnTff5qVJzzPkK3ELHfXAAAAAElFTkSuQmCC">
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </nav>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-5 bg-white border border-secondary search-results rounded-bottom p-0">
+                    <li>stsrat</li>
+                    <li>stsrat</li>
+                    <li>stsrat</li>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
     </header>
+
     <!-- Listing page -->
-    <div class="ms-lg-5">
-        <p class="headingTitle ms-lg-5">Places in Mumbai</p>
+    <div class="ms-lg-5 ">
+        <p class=" ms-lg-5 headingTitle">Places in Mumbai</p>
     </div>
-    <div id="content">
-        <div class="filterDiv">
-            <div class="filter-heading">
-                <h2>Filters</h2>
-            </div>
-            <div class="cuisine">
-                <p>Select Location</p>
-            </div>
 
-            <div class="ms-lg-3">
-                <select id="location" class="location-search search-form-control text-start border-danger"
-                    aria-label="Default select example">
-                    <option value="null" disabled selected hidden>Enter Location</option>
-                </select>
+    <div class="filterDiv">
+        <div class="filter-heading">
+            <h2>Filters</h2>
+        </div>
+        <div class="cuisine">
+            <p>Select Location</p>
+        </div>
+
+        <div class="ms-lg-3">
+            <select id="location" class="location-search search-form-control text-start border-danger"
+                aria-label="Default select example">
+                <option value="null" disabled selected hidden>Enter Location</option>
+            </select>
+        </div>
+        <div class="cuisine">
+            <p>Cuisine</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                North Indian
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                South Indian
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Chinese
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Fast Food
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Street Food
+            </label>
+        </div>
+        <div class="cuisine">
+            <p>Cost For Two</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Less than ₹ 500
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                ₹ 500 to ₹ 1000
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                ₹ 1000 to ₹ 1500
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                ₹ 1500 to ₹ 2000
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                ₹ 2000+
+            </label>
+        </div>
+        <div class="cuisine">
+            <p>Sort</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Price high to low
+            </label>
+        </div>
+        <div class="form-check sort-radio">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Price low to high
+            </label>
+        </div>
+    </div>
+    <div class="contentDiv">
+        <div class="food-item">
+            <div class="food-item-img">
+                <img src="" alt="dinner image">
             </div>
-            <div class="cuisine">
-                <p>Cuisine</p>
+            <div class="food-item-content">
+                <div class="subContent-heading">
+                    <h2> Samosa With Chutney</h2>
+                </div>
+                <div>
+                    <p class="food-content-para">Fort</p>
+                </div>
+                <div>
+                    <p class="location-para">Shop no.4, Badrinath building, No: 4, 60 Feet Rd, Sudama Nagar,
+                        Bhayandar West,
+                        Maharashtra 401101
+                    </p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    North Indian
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    South Indian
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Chinese
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Fast Food
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Street Food
-                </label>
-            </div>
-            <div class="cuisine">
-                <p>Cost For Two</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Less than ₹ 500
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    ₹ 500 to ₹ 1000
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    ₹ 1000 to ₹ 1500
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    ₹ 1500 to ₹ 2000
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    ₹ 2000+
-                </label>
-            </div>
-            <div class="cuisine">
-                <p>Sort</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Price high to low
-                </label>
-            </div>
-            <div class="form-check sort-radio">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Price low to high
-                </label>
+            <div class="subCousine">
+                <div class="cuisine-content">
+                    <p>COUSINES:</p>
+                    <p>COST FOR TWO: </p>
+                </div>
+                <div class="cuisine-cost">
+                    <p>RESTAURANT:</p>
+                    <p>₹ 800</p>
+                </div>
             </div>
         </div>
-        <div class="contentDiv">
-            <div class="food-item">
-                <div class="food-item-img">
-                    <img src="" alt="dinner image">
+
+        <div class="food-item">
+            <div class="food-item-img">
+                <img src="" alt="lunch image">
+            </div>
+            <div class="food-item-content">
+                <div class="subContent-heading">
+                    <h2> Special South Indian Thali</h2>
                 </div>
-                <div class="food-item-content">
-                    <div class="subContent-heading">
-                        <h2> Samosa With Chutney</h2>
-                    </div>
-                    <div>
-                        <p class="food-content-para">Fort</p>
-                    </div>
-                    <div>
-                        <p class="location-para">Shop no.4, Badrinath building, No: 4, 60 Feet Rd, Sudama Nagar,
-                            Bhayandar West,
-                            Maharashtra 401101
-                        </p>
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
+                <div>
+                    <p class="food-content-para">Fort</p>
                 </div>
-                <div class="subCousine">
-                    <div class="cuisine-content">
-                        <p>COUSINES:</p>
-                        <p>COST FOR TWO: </p>
-                    </div>
-                    <div class="cuisine-cost">
-                        <p>RESTAURANT:</p>
-                        <p>₹ 800</p>
-                    </div>
+                <div>
+                    <p class="location-para">Ground Floor, Vardan Apartment, St Alphonsa Church Rd, Vasai West,
+                        Vasai-Virar, Maharashtra 401202
+                    </p>
+                </div>
+                <div class="line">
+                    <hr>
                 </div>
             </div>
-
-            <div class="food-item">
-                <div class="food-item-img">
-                    <img src="" alt="lunch image">
+            <div class="subCousine">
+                <div class="cuisine-content">
+                    <p>COUSINES:</p>
+                    <p>COST FOR TWO: </p>
                 </div>
-                <div class="food-item-content">
-                    <div class="subContent-heading">
-                        <h2> Special South Indian Thali</h2>
-                    </div>
-                    <div>
-                        <p class="food-content-para">Fort</p>
-                    </div>
-                    <div>
-                        <p class="location-para">Ground Floor, Vardan Apartment, St Alphonsa Church Rd, Vasai West,
-                            Vasai-Virar, Maharashtra 401202
-                        </p>
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-                <div class="subCousine">
-                    <div class="cuisine-content">
-                        <p>COUSINES:</p>
-                        <p>COST FOR TWO: </p>
-                    </div>
-                    <div class="cuisine-cost">
-                        <p>RESTAURANT:</p>
-                        <p>₹ 1200</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="food-item">
-                <div class="food-item-img">
-                    <img src="" alt="snacks image">
-                </div>
-                <div class="food-item-content">
-                    <div class="subContent-heading">
-                        <h2> Chicken Curry With Rice</h2>
-                    </div>
-                    <div>
-                        <p class="food-content-para">Fort</p>
-                    </div>
-                    <div>
-                        <p class="location-para">Shop Number 29 Building Number 16 Kingston Tower, Kauls Heritage City,
-                            Kaul Heritage City, Vasai West, Vasai-Virar, Maharashtra 401202
-
-                        </p>
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-                <div class="subCousine">
-                    <div class="cuisine-content">
-                        <p>COUSINES:</p>
-                        <p>COST FOR TWO: </p>
-                    </div>
-                    <div class="cuisine-cost">
-                        <p>RESTAURANT:</p>
-                        <p>₹ 1500</p>
-                    </div>
+                <div class="cuisine-cost">
+                    <p>RESTAURANT:</p>
+                    <p>₹ 1200</p>
                 </div>
             </div>
 
         </div>
+
+
+        <div class="food-item">
+            <div class="food-item-img">
+                <img src="" alt="snacks image">
+            </div>
+            <div class="food-item-content">
+                <div class="subContent-heading">
+                    <h2> Chicken Curry With Rice</h2>
+                </div>
+                <div>
+                    <p class="food-content-para">Fort</p>
+                </div>
+                <div>
+                    <p class="location-para">Shop Number 29 Building Number 16 Kingston Tower, Kauls Heritage City,
+                        Kaul Heritage City, Vasai West, Vasai-Virar, Maharashtra 401202
+
+                    </p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+            </div>
+            <div class="subCousine">
+                <div class="cuisine-content">
+                    <p>COUSINES:</p>
+                    <p>COST FOR TWO: </p>
+                </div>
+                <div class="cuisine-cost">
+                    <p>RESTAURANT:</p>
+                    <p>₹ 1500</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <!-- Footer Section -->
