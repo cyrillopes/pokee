@@ -32,38 +32,38 @@ app.use(cors());
 //   );
 // });
 
-// app.get("/oauth", (req, res) => {
-//   const code = req.query.code;
-//   if (!code)
-//     return res.send({
-//       success: false,
-//       message: "Error while login",
-//     });
-//   superAgent
-//     .post("https://github.com/login/oauth/access_token")
-//     .send({
-//       client_id: clientId,
-//       client_secret: process.env.CLIENT_SECRET,
-//       code: code,
-//     })
-//     .set("Accept", "application/json")
-//     .end((err, result) => {
-//       if (err) throw err;
-//       let access_token = result.body.access_token;
-//       let option = {
-//         uri: "https://api.github.com/user",
-//         method: "GET",
-//         headers: {
-//           Accept: "Application/json",
-//           Authorization: `token ${access_token}`,
-//           "User-Agent": "mycode",
-//         },
-//       };
-//       request(option, (err, response, body) => {
-//         res.send(body);
-//       });
-//     });
-// });
+app.get("/oauth", (req, res) => {
+  const code = req.query.code;
+  if (!code)
+    return res.send({
+      success: false,
+      message: "Error while login",
+    });
+  superAgent
+    .post("https://github.com/login/oauth/access_token")
+    .send({
+      client_id: clientId,
+      client_secret: process.env.CLIENT_SECRET,
+      code: code,
+    })
+    .set("Accept", "application/json")
+    .end((err, result) => {
+      if (err) throw err;
+      let access_token = result.body.access_token;
+      let option = {
+        uri: "https://api.github.com/user",
+        method: "GET",
+        headers: {
+          Accept: "Application/json",
+          Authorization: `token ${access_token}`,
+          "User-Agent": "mycode",
+        },
+      };
+      request(option, (err, response, body) => {
+        res.send(body);
+      });
+    });
+});
 ////////////////////////////////////////////////////////////////////////
 app.get("/", (req, res) => {
   res.send("hello");
@@ -94,11 +94,11 @@ app.get("/index", (req, res) => {
 //   }
 // });
 
-// const auth = function (key) {
-//   if (process.env.KEY === key) {
-//     return true;
-//   } else return false;
-// };
+const auth = function (key) {
+  if (process.env.KEY === key) {
+    return true;
+  } else return false;
+};
 
 // app.get("/location", (req, res) => {
 //   let key = req.header("x-rest-token");
@@ -172,7 +172,7 @@ app.get(`/filter/:mealId`, (req, res) => {
 });
 
 app.get("/mealType", (req, res) => {
-  db.collection("mealType")
+  db.collection(" ")
     .find()
     .toArray((err, result) => {
       if (err) throw err;

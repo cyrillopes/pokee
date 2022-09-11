@@ -1,4 +1,4 @@
-const searchWrapper = document.querySelector(".search-restaurant");
+// const searchWrapper = document.querySelector(".search-restaurant");
 const inputData = document.querySelector("input");
 const suggestBox = document.querySelector(".search-results");
 const url = "https://poke-us.herokuapp.com/mealtype";
@@ -24,6 +24,7 @@ inputData.onkeyup = (e) => {
   let emptyArray = [];
   if (userData) {
     emptyArray = suggestions.filter((data) => {
+      console.log(data);
       return data[0]
         .toLocaleLowerCase()
         .startsWith(userData.toLocaleLowerCase());

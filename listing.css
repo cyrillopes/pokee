@@ -43,7 +43,7 @@ a {
   max-height: 280px;
   opacity: 0;
 }
-.search-results li x {
+.search-results li {
   list-style: none;
   padding: 8px 0 8px 20px;
 }
