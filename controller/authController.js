@@ -63,22 +63,14 @@ router.post("/login", (req, res) => {
   });
 });
 
-router.get("/userinfo", (req, res) => {
+router.get("/userInfo", (req, res) => {
   let token = req.headers["x-access-token"];
-  if (!token)
-    res.send({
-      auth: false,
-      token: "No token provided",
-    });
-  //If token is provided
+  if (!token) res.send({ auth: false, token: "No Token Provided" });
+  // jwt verify
   jwt.verify(token, config.secret, (err, user) => {
-    if (err)
-      return res.send({
-        auth: false,
-        token: "Invalid Token",
-      });
-    User.findById(user.id, (err, results) => {
-      res.send(results);
+    if (err) return res.send({ auth: false, token: "Invalid Token" });
+    User.findById(user.id, (err, result) => {
+      res.send(result);
     });
   });
 });
