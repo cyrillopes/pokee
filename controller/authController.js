@@ -63,7 +63,7 @@ router.post("/login", (req, res) => {
   });
 });
 
-router.get("/userDetails", (req, res) => {
+router.get("/userinfo", (req, res) => {
   let token = req.headers["x-access-token"];
   if (!token)
     res.send({
