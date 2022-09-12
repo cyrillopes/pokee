@@ -172,7 +172,7 @@ app.get(`/filter/:mealId`, (req, res) => {
 });
 
 app.get("/mealType", (req, res) => {
-  db.collection(" ")
+  db.collection("mealType")
     .find()
     .toArray((err, result) => {
       if (err) throw err;
