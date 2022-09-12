@@ -251,7 +251,7 @@ app.get("/orders", (req, res) => {
     });
 });
 
-app.put("/updateOrder/:id", (req, res) => {
+app.put("/orders/:id", (req, res) => {
   let oid = Number(req.params.id);
   db.collection("orders").updateOne(
     { orderId: oid },
